@@ -431,7 +431,7 @@ class Cameraman extends PluginBase implements Listener {
      * @param array $args
      * @return bool
      */
-    public function onCommand(CommandSender $sender, Command $command, $commandAlias, array $args):bool {
+    public function onCommand(CommandSender $sender, Command $command, $commandAlias, array $args){
         if(!$sender instanceof Player){
             $this->sendMessage($sender, "#error-only-in-game");
             return true;
